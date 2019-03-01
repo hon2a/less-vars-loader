@@ -1,6 +1,6 @@
 {
   "name": "@hon2a/less-vars-loader",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Webpack loader providing a seamless bridge from Less variable sheets to JS files",
   "repository": {
     "type": "git",
