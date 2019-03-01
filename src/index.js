@@ -1,1 +1,1 @@
-// TODO: put your module entry point here
+export { lessVarsLoader as default } from './lessVarsLoader'
