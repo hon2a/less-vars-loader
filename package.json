@@ -1,5 +1,5 @@
 {
-  "name": "@wisersolutions/less-vars-loader",
+  "name": "@hon2a/less-vars-loader",
   "version": "0.0.0",
   "description": "Webpack loader providing a seamless bridge from Less variable sheets to JS files",
   "repository": {

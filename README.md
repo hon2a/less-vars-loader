@@ -1,10 +1,41 @@
-# less-vars-loader
+# @hon2a/less-vars-loader
 
-Webpack loader providing a seamless bridge from Less variable sheets to JS files
+`@hon2a/less-vars-loader` is a Webpack loader providing a seamless bridge from Less variable
+sheets to JS files.
 
 ## Use
 
-Add a usage guide...
+Use the loader to extract variables from Less variable sheets (including imports, transitively)
+and bring them into a JS file as an object. Use inline loader syntax to set this up:
+
+```javascript
+import theme from '!@hon2a/less-vars-loader!./path/to/vars.less'
+``` 
+
+**Note:** Use a leading `!` to prevent use of other loaders.
+
+If you're not using the file also in regular imports, you may also set up the loader
+in `webpack.config.js` and take advantage of the `transform` option:
+
+```javascript
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.vars\.less$/,
+        use: '@hon2a/less-vars-loader',
+        options: {
+          transform: ([key, value]) => [camelCase(key), /^\d+px$/.test(value) ? parseInt(value, 10) : value],
+          lessOptions: { javascriptEnabled: true }
+        }
+      }
+    ]
+  }
+}
+```
+
+**Note:** This loader needs to go before other loaders matching the `test` if there are any
+(e.g. when also using `less-loader` to load other `.less` files).  
 
 ## Development
 
