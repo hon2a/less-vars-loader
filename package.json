@@ -22,24 +22,24 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@wisersolutions/eslint-config": "^1.0.3",
-    "@wisersolutions/eslint-formatter-idea": "^1.0.3",
-    "@wisersolutions/transpile-js": "^0.0.3",
-    "babel-eslint": "^9.0.0",
-    "babel-jest": "^23.6.0",
-    "eslint": "^5.16.0",
-    "eslint-config-prettier": "^3.0.1",
-    "eslint-plugin-react": "^7.13.0",
-    "jest": "^23.6.0",
-    "less": "^3.9.0",
-    "memory-fs": "^0.4.1",
-    "prettier": "^1.17.1",
-    "webpack": "^4.33.0"
+    "@wisersolutions/eslint-config": "^2.0.1",
+    "@wisersolutions/eslint-formatter-idea": "^1.0.5",
+    "@wisersolutions/transpile-js": "^0.0.17",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.7.1",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-jest": "^23.0.5",
+    "jest": "^24.9.0",
+    "less": "^3.10.3",
+    "memory-fs": "^0.5.0",
+    "prettier": "^1.19.1",
+    "webpack": "^4.41.2"
   },
   "dependencies": {
-    "@babel/runtime": "^7.4.5",
-    "@hon2a/less-vars-to-js": "^0.0.8",
+    "@babel/runtime": "^7.7.4",
+    "@hon2a/less-vars-to-js": "^0.0.12",
     "loader-utils": "^1.2.3",
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.15"
   }
 }
