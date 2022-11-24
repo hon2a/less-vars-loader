@@ -30,7 +30,7 @@
     "eslint": "^6.7.1",
     "eslint-config-prettier": "^6.7.0",
     "eslint-plugin-jest": "^23.0.5",
-    "jest": "^24.9.0",
+    "jest": "^29.3.1",
     "less": "^3.10.3",
     "memory-fs": "^0.5.0",
     "prettier": "^1.19.1",
